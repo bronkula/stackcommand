@@ -48,7 +48,7 @@
             return;
         }
         var self = this;
-        var this.currentcommand = this.getCmd();
+        this.currentcommand = this.getCmd();
         this.timer = setTimeout(function(){
             self.currentcommand.cb();
             self.currentcommand = false;
