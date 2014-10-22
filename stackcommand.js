@@ -53,7 +53,7 @@
             self.currentcommand.cb();
             self.currentcommand = false;
             self.runCmd();
-        },cmd.l);
+        },this.currentcommand.l);
     };
     // Clear out the current timer
     StackCommand.prototype.clearTimer = function(){
